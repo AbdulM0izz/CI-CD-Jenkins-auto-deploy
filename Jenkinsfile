@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        VERCEL_TOKEN = credentials('vercel-token')
+        vercelToken = credentials('vercel-token')
     }
     stages{
         stage('Install') {
